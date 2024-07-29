@@ -1,0 +1,414 @@
+#verbes-augure{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 0.8em;
+	color: var(--theme-color);
+	padding-bottom: 30px;
+}
+.verbe{
+    visibility: hidden;
+    opacity: 0;
+}
+#dresser{
+	position: absolute;
+	top:78%;
+	left:70%;
+}
+#deriver{
+	position: absolute;
+	top: 11%;
+	left:17%;
+}
+#pouvoir{
+	position: absolute;
+	top: 17%;
+	right:13%;
+}
+#devorer{
+	position: absolute;
+	top: 40%;
+	left:42%;
+}
+#crever{
+	position: absolute;
+	top: 72%;
+	right: 60%;
+}
+#esquiver{
+	position: absolute;
+	top: 30%;
+	left:66%;
+}
+#depouiller{
+	position: absolute;
+	bottom: 10%;
+	left:8%;
+}
+#censurer{
+	position: absolute;
+	top: 3%;
+	left:48%;
+}
+#disparaitre{
+	position: absolute;
+	top: 85%;
+	left:42%;
+}
+/* triptyques */
+#portfolio{
+    margin-top: 15vh;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3vw;
+    row-gap: 20vh;
+    width: 100%;
+}
+.grid-container img{
+    width: 100%;
+}
+.miniature:hover{
+    cursor: pointer;
+}
+#triptyque-disparaitre{
+	padding-bottom:10vh;
+}
+
+/* lightbox */
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+/* lecteur audio */
+#wrapper{
+	width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+	font-size: 14px;
+    margin-top: 5vh;
+}
+.audioplayer {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 1em 0;
+    padding: 0 24px;
+    width: 100%;
+    height: 66px;
+    align-items: center;
+    border: 1px solid var(--theme-color);
+    border-radius: 4px;
+    background: var(--background-color);
+}
+.audioplayer-playpause {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.audioplayer:not(.audioplayer-playing) .audioplayer-playpause {
+    background: rgba(255, 0, 0, 0);
+    border: 1px solid var(--theme-color);
+}
+.audioplayer:not(.audioplayer-playing) .audioplayer-playpause:hover {
+    background: var(--theme-color-transparent);
+}
+.audioplayer-playing .audioplayer-playpause {
+    background: var(--theme-color-transparent);
+    border: 1px solid #94bdbd;
+}
+.audioplayer-playing .audioplayer-playpause:hover {
+    background: var(--theme-color-transparent);
+}
+.audioplayer:not(.audioplayer-playing) .audioplayer-playpause a {
+    content: '';
+    justify-content: center;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    border-top: 7px solid transparent;
+    border-right: none;
+    border-bottom: 7px solid transparent;
+    border-left: 12px solid var(--theme-color);
+}
+.audioplayer-playing .audioplayer-playpause a {
+    content: '';
+    display: flex;
+    justify-content: space-between;
+    width: 12px;
+    height: 14px;
+}
+.audioplayer-playing .audioplayer-playpause a::before, .audioplayer-playing .audioplayer-playpause a::after {
+    content: '';
+    width: 4px;
+    height: 14px;
+    background-color: var(--theme-color);
+}
+.audioplayer-time {
+    display: flex;
+    width: 40px;
+    justify-content:center;
+    font-size: 12px;
+    color: rgba(51, 51 ,51, .6);
+}
+.audioplayer-time-current {
+    margin-left: 24px;
+}
+.audioplayer-time-duration {
+    margin-right: 24px;
+}
+.audioplayer-bar {
+    position: relative;
+    display: flex;
+    margin: 0 12px;
+    height: 12px;
+    flex-basis: 0;
+    flex-grow: 1;
+    cursor: pointer;
+}
+.audioplayer-bar::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 2px;
+    background-color: #DDE2E6;
+}
+.audioplayer-bar > div {
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.audioplayer-bar-loaded {
+    z-index: 1;
+    height: 2px;
+    background: #BEC8D2;
+}
+.audioplayer-bar-played {
+    flex-direction: row-reverse;
+    z-index: 2;
+    height: 2px;
+    background: -webkit-linear-gradient(left, var(--theme-color),#94bdbd);
+}
+.audioplayer-bar-played::after {
+    display: flex;
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    top: -5px;
+    right: -1px;
+    margin-right: -5px;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(230, 233, 234, 0.9);
+    border-radius: 6px;
+}
+.audioplayer:not(.audioplayer-playing) .audioplayer-bar-played::after {
+    border: 2px solid #BEC8D2;
+}
+.audioplayer-playing .audioplayer-bar-played::after {
+    border: 2px solid var(--theme-color);
+}
+.audioplayer-volume {
+    display: flex;
+    align-items: center;
+}
+.audioplayer-volume-button {
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.audioplayer-volume-button a {
+    display: flex;
+    width: 6px;
+    height: 8px;
+    background-color: #9A9FB0;
+    position: relative;
+}
+.audioplayer-volume-button a:before, .audioplayer-volume-button a:after {
+    content: '';
+    position: absolute;
+}
+.audioplayer-volume-button a:before {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 9px solid #9A9FB0;
+    border-bottom: 8px solid transparent;
+    border-left: none;
+    top: -4px;
+}
+.audioplayer:not(.audioplayer-mute) .audioplayer-volume-button a:after {
+    left: 10px;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    border: 6px double #9A9FB0;
+    border-width: 6px 6px 0 0;
+    border-radius: 0 12px 0 0;
+    transform: rotate(45deg);
+}
+.audioplayer-mute .audioplayer-volume-button a {
+    background-color: var(--theme-color);
+}
+.audioplayer-mute .audioplayer-volume-button a:before {
+    border-right: 9px solid var(--theme-color);
+}
+.audioplayer-volume-adjust {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+.audioplayer-volume-adjust > div {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 2px;
+    cursor: pointer;
+    background-color: #BEC8D2;
+}
+.audioplayer-volume-adjust div div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--theme-color);;
+}
+/* Frank Smith */
+#fs{
+	padding-bottom: 25px;
+	padding-top: 20vh;
+}
+#fs > a{
+	text-decoration: none;
+	color: black;
+}
+#fs > a:hover{
+	color: var(--theme-color);
+}
+.citation{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 0.8em;
+	width: 50vw;
+	margin:auto;
+	padding-bottom: 30px;
+}
+
+
+
+@media screen and (max-width: 1160px) {
+	/* triptyques */
+    #portfolio{
+        margin-top: 15vh;
+    }
+    .miniature{
+        display: block;
+        max-width: 98%;
+        max-height: 98%;
+        align-content: space-between;
+    }
+    .miniature:hover{
+        cursor: pointer;
+    }
+    #triptyque-disparaitre{
+        padding-bottom:10vh;
+    }
+}
+
+@media (max-aspect-ratio: 1) {
+    /* body{
+        background-color: pink;
+    } */
+    #portfolio{
+        margin-top: 13vh;
+    }
+    .grid-container{
+        row-gap: 18vh;
+    }
+    #fs{
+        padding-top: 18vh;
+    }
+}
+@media (max-aspect-ratio: 7/8) {
+    /* body{
+        background-color: red;
+    } */
+    #portfolio{
+        margin-top: 10vh;
+    }
+    .grid-container{
+        row-gap: 16vh;
+    }
+    .audioplayer-volume {
+        display: none;
+    }
+    #fs{
+        padding-top: 15vh;
+    }
+}
+@media (max-aspect-ratio: 2/3) {
+    /* body{
+        background-color: green;
+    } */
+    .grid-container{
+        row-gap: 14vh;
+    }
+    #fs{
+        padding-top: 13vh;
+    }
+}
+@media (max-aspect-ratio: 5/9) {
+    /* body{
+        background-color: blue;
+    } */
+    #portfolio{
+        margin-top: 8vh;
+    }
+    .grid-container{
+        row-gap: 12vh;
+    }
+    #fs{
+        padding-top: 10vh;
+    }
+}
+@media (max-aspect-ratio: 6/13) {
+    /* body{
+        background-color: yellow;
+    } */
+    #portfolio{
+        margin-top: 6vh;
+    }
+    .grid-container{
+        row-gap: 10vh;
+    }
+}
+

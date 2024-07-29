@@ -1,0 +1,86 @@
+/* NAV */
+ul.annees{
+	font-size: 1.5em;
+    margin-top: .3em;	
+}
+li.annee{
+    visibility: hidden;
+    opacity: 0;
+    list-style: none;
+    text-align:left;
+}
+li.annee a{
+    text-decoration: none;
+    color: var(--text-color);
+    opacity: .6;
+    padding-left: .5em;
+}
+li.annee a:hover{
+    color: var(--theme-color);
+}
+li.annee.on a{
+    color: var(--theme-color);
+    opacity: 1;
+}
+li.annee.on a:hover{
+    cursor: default;
+}
+
+/* GENERAL */
+.annonce{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    font-size: 1.2em;
+}
+.annonce > a{
+	text-decoration: none;
+	color: var(--theme-color);
+}
+.annonce > a:hover{
+	color: var(--text-color);
+}
+.paragraphe{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+    text-align: center;
+    color: var(--theme-color);
+    font-size: 2.2em;
+    user-select: none;
+    /* transform: rotateZ(90deg); */
+    font-family: serif;
+}
+.commentaire a{
+    text-decoration: none;
+    color: var(--theme-color);
+}
+.commentaire a:hover{
+    color: var(--text-color);
+}
+.affiche-full,
+.affiche-full > img,
+.affiche-full > a > img{
+	max-width: 100%;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 660px) {
+    ul.annees{
+        position: absolute;
+        display: flex;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    ul.annees{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    ul.annees{
+        font-size: 1.1em;
+    }
+}
+    

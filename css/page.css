@@ -1,0 +1,536 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* --theme-color: #249595; */
+    --theme-color:#ff7d18;
+    /* --theme-color-transparent: rgba(36, 149, 149, 0.1); */
+    --theme-color-transparent: rgba(255, 125, 24, 0.1);
+    --text-color: #141616;
+    --background-color: #e6e9ea;
+    --background-color-transparent: rgba(230, 233, 234, 0.9);
+}
+
+strong, em{
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+    text-align: center;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    min-height: 150vh;
+}
+
+.content{
+    width: 90%;
+    margin: auto;
+}
+
+#main{
+	position: relative;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+}
+
+#fixe{
+	position: fixed;
+  	height: 100vh;
+  	padding-top:8vh;
+}
+#titre{
+	font-weight: bold;
+	font-size: 1.8em;
+	/* text-transform: uppercase; */
+	color: var(--theme-color);
+    visibility: hidden;
+    opacity: 0;
+}
+section{
+	margin-left: 20vw;
+	padding-top: 8vh;
+	padding-left: 30px;
+	padding-right: 5vw;
+	max-width: 70%;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.5em;
+	text-align: justify;
+}
+.image-tete{
+    position: relative;
+    margin-bottom: 15vh;
+}
+.image-tete > img{
+	width: 100%;
+	height: auto;  
+}
+
+/* MENU */
+nav{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width : 80%;
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+}
+nav > ul{
+    top: 50%;
+    margin: auto;
+    list-style: none;
+}
+nav > ul > li{
+    margin: 5vh;
+}
+nav > ul > li > a{
+    text-transform: uppercase;
+    font-size:2em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+nav > ul > li > a:hover{
+    color: var(--theme-color);
+}
+nav > ul > li > ul{
+    list-style: none;
+    padding-top: .4em;
+}
+nav > ul > li > ul[data-sub="close"]{
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+nav > ul > li > ul > li{
+    margin: 1vh;
+}
+nav > ul > li > ul > li > a{
+    font-size:1.5em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+nav > ul > li > ul > li > a:hover{
+    color: var(--theme-color);
+}
+nav .logo-nav,
+nav .logo-nav-hover{
+    height: 1em;
+}
+nav img.logo-nav-hover{
+    display:none;
+}
+nav a.logo-nav:hover img.logo-nav{
+    display:none;
+}
+nav a.logo-nav:hover img.logo-nav-hover{
+    display:inherit;
+}
+.hamburger {
+    position: fixed;
+    top: 8vh;
+    right: 10vh;
+    display: block;
+    z-index: 10000;
+}
+.hamburger:hover{
+    cursor: pointer;
+}
+.bar {
+    height: 3px;
+    width: 40px;
+    background:  var(--text-color);
+    margin: 10px 0;
+    opacity: 0.8;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+/* LINES */
+.line-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+.line{
+    height: 1.2vh;
+    display: flex;
+    width: 100%;
+}
+.half{
+    background-color: white;
+    box-shadow: 0px -10px white;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1160px) {
+    .hamburger { 
+        top: 8vh;
+        right: 6vh;
+    }
+    #fixe{
+        padding-top:8vh;
+    }
+    #titre{
+        font-size: 1.8em;
+    }
+    section{
+        margin-left: 18vw;
+        padding-top: 8vh;
+        padding-left: 30px;
+        padding-right: 5vw;
+        max-width: 74%;
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 960px) {
+    #fixe{
+        padding-top:8vh;
+    }
+    #titre{
+        font-size: 1.7em;
+    }
+    section{
+        margin-left: 18vw;
+        padding-top: 8vh;
+        padding-left: 30px;
+        padding-right: 5vw;
+        max-width: 74%;
+        font-size: 1.4em;
+    }
+}
+@media screen and (max-width: 810px) {
+    #fixe{
+        padding-top:8vh;
+    }
+    #titre{
+        font-size: 1.6em;
+    }
+    section{
+        margin-left: 18vw;
+        padding-top: 8vh;
+        padding-left: 30px;
+        padding-right: 5vw;
+        max-width: 74%;
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 660px) {
+    #main{
+        display: block;
+        padding-bottom: 20px;
+        text-align: left;
+        margin-left: 8vw;
+    }
+    #fixe{
+        position: relative;
+        padding-top:6vh;
+        height:auto;
+    }
+    #titre{
+        font-size: 1.6em;
+    }
+    section{
+        margin-left: 0vw;
+        padding-left: 0px;
+        padding-top: 8vh;
+        padding-right: 0vw;
+        max-width: 86%;
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 560px) {
+    #titre{
+        font-size: 1.5em;
+    }
+    section{
+        max-width: 83%;
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 510px) {
+    #main{
+        display: block;
+        padding-bottom: 20px;
+        text-align: left;
+        margin-left: 8vw;
+    }
+    #fixe{
+        position: relative;
+        padding-top:6vh;
+        height:auto;
+    }
+    section{
+        margin-left: 0vw;
+        padding-left: 0px;
+        padding-top: 8vh;
+        padding-right: 0vw;
+        max-width: 80%;
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 460px) {
+    #main{
+        display: block;
+        padding-bottom: 20px;
+        text-align: left;
+        margin-left: 6vw;
+    }
+    #fixe{
+        position: relative;
+        padding-top:6vh;
+        height:auto;
+    }
+    section{
+        margin-left: 0vw;
+        padding-left: 0px;
+        padding-top: 8vh;
+        padding-right: 0vw;
+        max-width: 80%;
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 410px) {
+    #main{
+        display: block;
+        padding-bottom: 20px;
+        text-align: left;
+        margin-left: 5vw;
+    }
+    #fixe{
+        position: relative;
+        padding-top:6vh;
+        height:auto;
+    }
+    #titre{
+        font-size: 1.4em;
+    }
+    section{
+        margin-left: 0vw;
+        padding-left: 0px;
+        padding-top: 8vh;
+        padding-right: 0vw;
+        max-width: 76%;
+        font-size: 1em;
+        text-align: left;
+    }
+}
+
+/* MENU EN FONCTION DE VH */
+@media screen and (max-height: 660px) {
+    .hamburger { 
+        top: 6vh;
+        right: 6vh;
+    }
+    nav > ul > li{
+        margin: 5vh;
+    }
+    nav > ul > li > a{
+        font-size:1.8em;
+    }
+
+    nav > ul > li > ul{
+        padding-top: .4em;
+    }
+    nav > ul > li > ul > li{
+        margin: 1vh;
+    }
+    nav > ul > li > ul > li > a{
+        font-size:1.4em;
+    }
+    nav .logo-nav,
+    nav .logo-nav-hover{
+        height: 1em;
+    }
+}
+@media screen and (max-height: 560px) {
+    nav > ul > li{
+        margin: 4.5vh;
+    }
+    nav > ul > li > a{
+        font-size:1.7em;
+    }
+
+    nav > ul > li > ul{
+        padding-top: .3em;
+    }
+    nav > ul > li > ul > li{
+        margin: .8vh;
+    }
+    nav > ul > li > ul > li > a{
+        font-size:1.3em;
+    }
+    nav .logo-nav,
+    nav .logo-nav-hover{
+        height: 1em;
+    }
+}
+@media screen and (max-height: 460px) {
+    .hamburger { 
+        top: 4vh;
+        right: 4vh;
+    }
+    nav > ul > li{
+        margin: 4vh;
+    }
+    nav > ul > li > a{
+        font-size:1.6em;
+    }
+    nav > ul > li > ul{
+        padding-top: .3em;
+    }
+    nav > ul > li > ul > li{
+        margin: .7vh;
+    }
+    nav > ul > li > ul > li > a{
+        font-size:1.3em;
+    }
+    nav .logo-nav,
+    nav .logo-nav-hover{
+        height: 1em;
+    }
+}
+@media screen and (max-height: 410px) {
+    nav > ul > li{
+        margin: 3.5vh;
+    }
+    nav > ul > li > a{
+        font-size:1.4em;
+    }
+    nav > ul > li > ul{
+        padding-top: 0em;
+    }
+    nav > ul > li > ul > li{
+        margin: .6vh;
+    }
+    nav > ul > li > ul > li > a{
+        font-size:1.2em;
+    }
+    nav .logo-nav,
+    nav .logo-nav-hover{
+        height: 1em;
+    }
+}
+@media screen and (max-height: 360px) {
+    nav > ul > li{
+        margin: 3vh;
+    }
+    nav > ul > li > a{
+        font-size:1.3em;
+    }
+    nav > ul > li > ul{
+        padding-top: 0em;
+    }
+    nav > ul > li > ul > li{
+        margin: .5vh;
+    }
+    nav > ul > li > ul > li > a{
+        font-size:1.1em;
+    }
+    nav .logo-nav,
+    nav .logo-nav-hover{
+        height: 1em;
+    }
+}
+@media screen and (max-height: 310px) {
+    nav > ul > li{
+        margin: 2.5vh;
+    }
+    nav > ul > li > a{
+        font-size:1.2em;
+    }
+    nav > ul > li > ul{
+        padding-top: 0em;
+    }
+    nav > ul > li > ul > li{
+        margin: .4vh;
+    }
+    nav > ul > li > ul > li > a{
+        font-size:1em;
+    }
+    nav .logo-nav,
+    nav .logo-nav-hover{
+        height: 1em;
+    }
+}
+@media screen and (max-height: 310px) {
+    nav > ul > li{
+        margin: 2vh;
+    }
+    nav > ul > li > a{
+        font-size:1.1em;
+    }
+    nav > ul > li > ul{
+        padding-top: 0em;
+    }
+    nav > ul > li > ul > li{
+        margin: .3vh;
+    }
+    nav > ul > li > ul > li > a{
+        font-size:.9em;
+    }
+    nav .logo-nav,
+    nav .logo-nav-hover{
+        height: 1em;
+    }
+}
+
+/* VERTICAL SPACES */
+@media (max-aspect-ratio: 1) {
+    /* body{
+        background-color: pink;
+    } */
+    .image-tete{
+        margin-bottom: 10vh;
+    }
+}
+@media (max-aspect-ratio: 7/8) {
+    /* body{
+        background-color: red;
+    } */
+    .image-tete{
+        margin-bottom: 8vh;
+    }
+}
+@media (max-aspect-ratio: 2/3) {
+    /* body{
+        background-color: green;
+    } */
+    section{
+        padding-top: 6vh;
+    }
+}
+@media (max-aspect-ratio: 5/9) {
+    /* body{
+        background-color: blue;
+    } */
+    .image-tete{
+        margin-bottom: 6vh;
+    }
+    section{
+        padding-top: 5vh;
+    }
+}
+@media (max-aspect-ratio: 6/13) {
+    /* body{
+        background-color: yellow;
+    } */
+    .image-tete{
+        margin-bottom: 4vh;
+    }
+    section{
+        padding-top: 4vh;
+    }
+    
+}

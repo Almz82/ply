@@ -1,0 +1,101 @@
+#container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    white-space: nowrap;
+    padding-left: 16%;
+  }
+  
+  .adresse,
+  .message{
+    font-size: 1.4em;
+  }
+  
+  .word span{
+    display: inline-block;
+  }
+  
+  span.message{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .trigger-zone{
+    cursor: pointer;
+  }
+  
+  
+  @media screen and (max-width: 1060px){
+    #container{
+        padding-left: 20%;
+    }
+  }
+  
+  @media screen and (max-width: 860px){
+    .adresse,
+    .message{
+      font-size: 1.3em;
+    }
+    #container{
+        padding-left: 23%;
+    }
+  }
+
+  @media screen and (max-width: 760px){
+    #container{
+        padding-left: 25%;
+    }
+  }
+  
+  @media screen and (max-width: 660px){
+    .adresse,
+    .message{
+      font-size: 1.2em;
+    }
+    #container{
+        padding-left: 23%;
+    }
+  }
+  
+  @media screen and (max-width: 560px){
+    .adresse,
+    .message{
+      font-size: 1.1em;
+    }
+    #container{
+        padding-left: 27%;
+    }
+  }
+  
+  @media screen and (max-width: 460px){
+    .adresse,
+    .message{
+      font-size: 1em;
+    }
+    #container{
+        padding-left: 30%;
+    }
+  }
+
+  @media screen and (max-width: 410px){
+    .adresse,
+    .message{
+      font-size: .9em;
+    }
+    #container{
+        padding-left: 33%;
+    }
+  }
+
+  @media screen and (max-width: 360px){
+    #container{
+        padding-left: 40%;
+    }
+  }
