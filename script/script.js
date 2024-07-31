@@ -214,7 +214,7 @@ const animationPageOut = () => {
 
 /* animation générale PAGES */
 const animationTitre = () => {
-    const titre = document.querySelector('#titre');
+    const titre = document.querySelectorAll('.titre');
 
     gsap.fromTo(titre, {autoAlpha: 0, xPercent: -100}, {autoAlpha: 1, xPercent: 0, duration: .5, delay: 1, ease: 'expo.out'})
 }
@@ -324,6 +324,10 @@ window.onload = () => {
             animationAnneesIn();
         }
         if(content.dataset.type == "augure"){
+            animationTitre();
+            animationVerbes();
+        }
+        if(content.dataset.type == "365"){
             animationTitre();
             animationVerbes();
         }
