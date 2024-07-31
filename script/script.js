@@ -108,6 +108,26 @@ const openNav = () => {
     return tl;
 }
 
+const openNavSmall = () => {
+    const barUn = document.querySelector('.bar:nth-child(1)');
+    const barDeux = document.querySelector('.bar:nth-child(2)');
+    const barTrois = document.querySelector('.bar:nth-child(3)');
+    const menu = document.querySelector('.nav');
+
+    const tl = gsap.timeline({
+        defaults: {
+            duration: 0.3
+        }
+    });
+
+    tl
+        .to(barUn, {y: 9, rotationZ: 45}, 0)
+        .to(barDeux, {autoAlpha: 0}, 0)
+        .to(barTrois, {y: -9, rotationZ: -45}, 0)
+        .to(menu, {autoAlpha: 1, duration: .2}, .3)
+    return tl;
+}
+
 const closeNav = () => {
     const barUn = document.querySelector('.bar:nth-child(1)');
     const barDeux = document.querySelector('.bar:nth-child(2)');
@@ -356,7 +376,11 @@ window.onload = () => {
     hamburger.addEventListener('click', () => {
         if(hamburger.dataset.nav == "close"){
             hamburger.dataset.nav = "open";
-            openNav();
+            if (window.matchMedia("(min-width: 960px)").matches) {
+                openNav();
+              } else {
+                openNavSmall();
+              }
             linesIn();
         }
         else{

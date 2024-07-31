@@ -216,6 +216,16 @@ nav a.logo-nav:hover img.logo-nav-hover{
         max-width: 74%;
         font-size: 1.4em;
     }
+    /* small hamburger */
+    .hamburger { 
+        top: 8vh;
+        right: 4vh;
+    }
+    .bar {
+        height: 2px;
+        width: 30px;
+        margin: 7px 0;
+    }
 }
 @media screen and (max-width: 810px) {
     #fixe{
@@ -255,6 +265,10 @@ nav a.logo-nav:hover img.logo-nav-hover{
         padding-right: 0vw;
         max-width: 86%;
         font-size: 1.2em;
+    }
+    .hamburger { 
+        top: 8vh;
+        right: 3vh;
     }
 }
 @media screen and (max-width: 560px) {
@@ -338,7 +352,7 @@ nav a.logo-nav:hover img.logo-nav-hover{
 @media screen and (max-height: 660px) {
     .hamburger { 
         top: 6vh;
-        right: 6vh;
+        right: 5vh;
     }
     nav > ul > li{
         margin: 5vh;
