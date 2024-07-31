@@ -55,6 +55,7 @@ body{
 h2{
     font-style: italic;
     color: var(--theme-color);
+    font-size: 1.3em !important;
 }
 section{
 	margin-left: 20vw;
@@ -216,6 +217,9 @@ nav a.logo-nav:hover img.logo-nav-hover{
         max-width: 74%;
         font-size: 1.4em;
     }
+    h2{
+        max-width: 110px;
+    }
     /* small hamburger */
     .hamburger { 
         top: 8vh;
@@ -265,6 +269,9 @@ nav a.logo-nav:hover img.logo-nav-hover{
         padding-right: 0vw;
         max-width: 86%;
         font-size: 1.2em;
+    }
+    h2{
+        max-width: fit-content;
     }
     .hamburger { 
         top: 8vh;
