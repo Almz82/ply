@@ -1,0 +1,202 @@
+html {
+    overflow-y:scroll;
+}
+body{
+    min-height: 100vh;
+	overflow-x: hidden;
+}
+.content{
+	width: 100%;
+}
+#main{
+	padding-top: 6vh;
+	width: 86vw;
+}
+.row{
+	position: relative;
+}
+.artiste{
+	display: inline-block;
+	position: absolute;
+	opacity:0;
+	font-size:1em;
+	line-height:.9em;
+    color: var(--text-color);
+	background-color: var(--background-color);
+	padding:2px;
+}
+.artiste:hover{
+	color:var(--theme-color);
+	cursor: pointer;
+}
+.artiste a{
+	text-decoration: none;
+	color: var(--text-color);
+}
+.artiste a:hover{
+	color:var(--theme-color);
+}
+#artaud{
+	top:42vh;
+}
+#beckett{
+	top:49vh;
+}
+#bourgeois{
+	top:6vh;
+}
+#brecht{
+	top:66vh;
+}
+#broomberg{
+	top:81vh;
+}
+#bucher{
+	top:38vh;
+}
+#burroughs{
+	top: 85vh;
+}
+#cahn{
+	top: 11vh;
+}
+#clerambault{
+	top:76vh;
+}
+#deleuze{
+	top:46vh;
+}
+#deligny{
+	top:23vh;
+}
+#foucault{
+	top:71vh;
+}
+#gutai{
+	top:59vh;
+}
+#haraway{
+	top: 89vh;
+}
+#hoch{
+	top:1vh;
+}
+#leguin{
+	top: 35vh;
+}
+#morizot{
+	top:62vh;
+}
+#michaux{
+	top:16vh;
+}
+#periot{
+	top:20vh;
+}
+#perrot{
+	top:28vh;
+}
+#simon{
+	top:54vh;
+}
+#warburg{
+	top:31vh;
+}
+
+#contenus{
+	width: 60%;
+	height: auto;
+	margin: auto;
+	opacity:1;
+	transform: translateX(5vw);
+}
+#contenus:hover{
+	cursor: pointer;
+}
+#contenus img{
+	width:100%;
+}
+#boite-artaud, #boite-beckett, #boite-brecht, #boite-clerambault, #boite-deligny, #boite-gutai, #boite-foucault, #boite-hoch, #boite-michaux{
+	border: solid black 1px;
+	z-index:20;
+	width: 100%;
+	padding: 10%;
+	background-color: white;
+}
+.texte{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.4em;
+	text-align: justify;
+	padding-right: 10%;
+	padding-left: 10%;
+	width: fit-content;
+	margin: auto;
+}
+.reference{
+	padding-top: 25px;
+	font-size: 0.9em;
+}
+figure{
+	margin: 0px;
+	padding-bottom: 30px;
+}
+figcaption{
+	font-size: 0.9em;
+	text-align: left;
+}
+.espace{
+	margin-right: 50px;
+}
+.italique{
+	font-style:italic;
+}
+.close{
+	display: none;
+}
+svg{
+	position: absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	width:100vw;
+	height:100vh;
+	z-index:-10;
+}
+.disabled { 
+  pointer-events: none; 
+  cursor: default; 
+  }
+
+
+
+
+@media screen and (max-width: 1360px) {
+	#contenus{
+		width:70%;
+		transform: translateX(5vw);
+	}
+	
+}
+@media screen and (max-width: 1160px) {
+	.artiste{
+		font-size:0.8em;
+	}
+	#contenus{
+		font-size:0.9em;
+		width:75%;
+	}
+}
+@media screen and (max-width: 860px) {
+	#contenus{
+		width:80%;
+	}
+}
+@media screen and (max-width: 660px) {
+	#main{
+        margin-left: 0vw;
+    }
+	.artiste{
+		font-size:0.7em;
+	}
+}
