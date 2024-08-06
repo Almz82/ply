@@ -279,6 +279,26 @@ const animationVerbes = () => {
 
 }
 
+/* animation PLY-CV */
+const animationPly = () => {
+    const logoUn = document.querySelector('.logo.un');
+    const logoDeux = document.querySelector('.logo.deux');
+    const logoTrois = document.querySelector('.logo.trois');
+
+    const tl = gsap.timeline({
+        defaults: {
+            duration: 1.2, ease: 'expo.out'
+        }
+    });
+
+    tl
+        .fromTo(logoDeux, {autoAlpha: 0}, {autoAlpha: 1, duration: 3}, 1)
+        .fromTo(logoUn, {autoAlpha: 0, xPercent: 90}, {autoAlpha: 1, xPercent: 0}, 1)
+        .fromTo(logoTrois, {autoAlpha: 0, xPercent: -90}, {autoAlpha: 1, xPercent: 0}, 1)
+    return tl;
+}
+
+
 /* animation CONTACT */
 function getRandomInt(min, max) {
     const minCeiled = Math.ceil(min);
@@ -350,6 +370,9 @@ window.onload = () => {
         if(content.dataset.type == "365"){
             animationTitre();
             animationVerbes();
+        }
+        if(content.dataset.type == "ply"){
+            animationPly();
         }
         if(content.dataset.type == "contact"){
             const adresse = document.querySelector("#line");

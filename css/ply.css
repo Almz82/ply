@@ -1,0 +1,186 @@
+#logo{
+    margin-top: 9vh;
+    height: 30vh;
+}
+
+.logo{
+    height: 20vh;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.ply{
+    width: 90%;
+    margin: auto;
+	padding-top: 8vh;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.5em;
+	text-align: justify;
+}
+
+#intro{
+    width: 70%;
+    margin: auto;
+}
+
+#intro p{
+    margin-top: 1em;
+}
+
+#intro ul{
+    padding-top: 1em;
+}
+
+#intro li{
+	list-style-type: none;
+    margin-left: 5vw;
+}
+#portrait{
+	text-align: center;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+#portrait>img{
+    max-height: 90vh;
+	width: auto;
+    max-width: 80%;
+}
+
+.cv{
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: .7em;
+	padding-top: 3em;
+	padding-bottom: 50px;
+}
+.cv .gras{
+	font-weight: bold;
+}
+.cv .blank{
+	padding-right: 12px;
+}
+.col-0{
+	width: 25%;
+	padding-right:1em;
+}
+.col-1-container{
+    width: 75%;
+    display: flex;
+}
+.col-1{
+	width: 50%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.nom{
+	text-align: right;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+  	top: 3em;
+  	height: 26px;
+  	padding-bottom: 142px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+}
+.nom a{
+	text-decoration: none;
+	color: var(--text-color);
+}
+.nom a:hover{
+	text-decoration: none;
+	color: var(--theme-color);
+}
+/*responsive*/
+@media screen and (max-width: 960px) {
+    .ply{
+        font-size: 1.4em;
+    }
+    .cv{
+        display: block;
+        padding-top: 0em;
+        font-size: .8em;
+    }
+    .col-0{
+        width: 100%;
+    }
+    .col-1-container{
+        width: 100%;
+        display: flex;
+    }
+    .col-1{
+        width: 50%;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+    .nom{
+        text-align: center;
+        position: relative;
+        height: 26px;
+        padding-bottom: 142px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width: 810px) {
+    .ply{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 660px) {
+    #logo{
+        margin-top: 9vh;
+        height: 20vh;
+    }
+    
+    .logo{
+        height: 15vh;
+        visibility: hidden;
+        opacity: 0;
+    }
+    #main{
+        display: block;
+        padding-bottom: 20px;
+        text-align: center;
+        margin-left: 0vw;
+    }
+    #intro{
+        width: 80%;
+    }
+    .cv{
+        width: 80%;
+    }
+    .col-1-container{
+        width: 100%;
+        display: block;
+    }
+    .col-1{
+        width: 100%;
+        padding-right: 0%;
+        padding-left: 0%;
+        padding-bottom: 2em;
+    }
+    .nom{
+        text-align: center;
+        position: relative;
+        height: 26px;
+        padding-bottom: 142px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .ply{
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 460px) {
+    .ply{
+        font-size: 1em;
+    }
+    #intro{
+        width: 75%;
+    }
+    .cv{
+        width: 75%;
+    }
+}
