@@ -1,0 +1,203 @@
+.image-tete-carole{
+    width: 100%;
+    aspect-ratio: 4/5;
+    background-image: url("../images/carole/carole00.jpg");
+    background-size: cover;
+    position: relative;
+    margin-bottom: 15vh;
+}
+
+#citation-carole{
+	font-size: 0.8em;
+	position: absolute;
+    font-style: italic;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+#vers-1{
+    position: absolute;
+	top: 3%;
+	left: 15%;
+	max-width: 85%;
+	padding: 2em;
+	opacity: 0;
+	transition: 1s ease-out;
+}
+#vers-2{
+    position: absolute;
+	top: 13%;
+	left: 30%;
+	max-width: 70%;
+	padding: 2em;
+	opacity: 0;
+	transition: 1s ease-out;
+}
+#vers-3{
+    position: absolute;
+	top: 28%;
+	left: 40%;
+	max-width: 60%;
+	padding: 2em;
+	opacity: 0;
+	transition: 1s ease-out;
+}
+#vers-4{
+    position: absolute;
+	top: 42%;
+	left: 30%;
+	max-width: 70%;
+	padding: 2em;
+	opacity: 0;
+	transition: 1s ease-out;
+}
+#vers-5{
+    position: absolute;
+	top: 56%;
+	left: 10%;
+	max-width: 90%;
+	padding: 2em;
+	opacity: 0;
+	transition: 1s ease-out;
+}
+#vers-6{
+    position: absolute;
+	top: 70%;
+	left: 55%;
+	max-width: 45%;
+	padding: 2em;
+	opacity: 0;
+	transition: 1s ease-out;
+}
+#vers-7{
+    position: absolute;
+	top: 83%;
+	left: 0%;
+	max-width: 100%;
+	padding: 2em;
+	opacity: 0;
+	transition: .5s ease-out;
+}
+#vers-1:hover,
+#vers-2:hover,
+#vers-3:hover,
+#vers-4:hover,
+#vers-5:hover,
+#vers-6:hover,
+#vers-7:hover{
+	opacity:1;
+}
+
+.galerie{
+    margin-top: 4em;
+	min-height: 90vh;
+}
+.superposition{
+	position: relative;
+}
+.carole-texte{
+	position: absolute;
+	top: 0;
+	left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.carole-photo{
+	position: absolute;
+	top: 0;
+	left: 50%;
+    transform: translateX(-50%);
+	z-index:1;
+	opacity: 1;
+	transition: 8s ease-out;
+}
+.carole-photo img{
+	height: 90vh;
+}
+.carole-texte img{
+	height: 90vh;
+}
+.superposition:hover .carole-photo{
+	opacity: 0.4;
+}
+
+/* responsive */
+@media screen and (max-width: 960px) {
+    #citation-carole{
+        font-size: 0.7em;
+    }
+}
+
+@media (max-aspect-ratio: 640/640) {
+    .galerie{
+        margin-top: 4em;
+        min-height: 80vh;
+    }
+    .carole-photo img{
+        height: 80vh;
+    }
+    .carole-texte img{
+        height: 80vh;
+    }
+}
+@media (max-aspect-ratio: 540/640) {
+    .galerie{
+        margin-top: 4em;
+        min-height: 70vh;
+    }
+    .carole-photo img{
+        height: 70vh;
+    }
+    .carole-texte img{
+        height: 70vh;
+    }
+}
+@media (max-aspect-ratio: 510/640) {
+    .galerie{
+        margin-top: 4em;
+        min-height: 60vh;
+    }
+    .carole-photo img{
+        height: 60vh;
+    }
+    .carole-texte img{
+        height: 60vh;
+    }
+}
+@media (max-aspect-ratio: 460/640) {
+    .galerie{
+        margin-top: 4em;
+        min-height: 50vh;
+    }
+    .carole-photo img{
+        height: 50vh;
+    }
+    .carole-texte img{
+        height: 50vh;
+    }
+}
+@media (max-aspect-ratio: 380/640) {
+    .galerie{
+        margin-top: 4em;
+        min-height: 45vh;
+    }
+    .carole-photo img{
+        height: 45vh;
+    }
+    .carole-texte img{
+        height: 45vh;
+    }
+}
+@media (max-aspect-ratio: 380/640) {
+    .galerie{
+        margin-top: 4em;
+        min-height: 40vh;
+    }
+    .carole-photo img{
+        height: 40vh;
+    }
+    .carole-texte img{
+        height: 40vh;
+    }
+}

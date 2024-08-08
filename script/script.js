@@ -367,6 +367,9 @@ window.onload = () => {
             animationTitre();
             animationVerbes();
         }
+        if(content.dataset.type == "carole"){
+            animationTitre();
+        }
         if(content.dataset.type == "365"){
             animationTitre();
             animationVerbes();

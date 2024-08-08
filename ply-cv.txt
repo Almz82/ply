@@ -454,7 +454,7 @@
 								<a href="#" class="sub_nav_link internal">Feux</a>
 							</li>
 							<li class="sub_nav_item">
-								<a href="carole.html" class="sub_nav_link internal">Carole</a>
+								<a href="#" class="sub_nav_link internal">Carole</a>
 							</li>
 							<li class="sub_nav_item">
 								<a href="augure.html" class="sub_nav_link internal">L'Augure</a>
@@ -496,6 +496,115 @@
 						<p>Nos pratiques personnelles se rejoignent et forment des légendes, des objets intrépides, des performances activées par les gestes et le regard du public. Ensemble nous cherchons à élucider le réel, c’est-à-dire à en exposer les points critiques, les brèches, les désordres, tout en se faisant se court-circuiter et se croiser les différents enjeux de la représentation. Notre complicité créative se façonne pli après pli, et bâtit des lieux de rencontres. C’est ainsi que nous envisageons la création, un lieu d’avance, un lieu d’observation, un lieu d’accueil et de possibles.</p>
 						<div id="portrait">
 						  <img src="images/cv/duo.jpg" alt="Portrait du duo PLY" />
+						</div>
+					  </div>
+					
+					  <div class="cv">
+						<div class="col-0">
+						  <div class="nom">
+							Perrine Le&nbsp;Querrec<br>
+							<a href="http://www.perrine-lequerrec.fr" target="_blanc">www.perrine-lequerrec.fr</a><br><br>
+						  </div>
+						</div>
+						<div class="col-1-container">
+							<div class="col-1">
+								<span class="gras">Biographie</span><br><br>
+								Perrine Le&nbsp;Querrec écrit de la poésie et de la prose. Sa langue est une architecture de silences, de trous et de pliures. Langue des minorités, immédiatement politique et entraînant une solidarité active, ses écrits dansent sur la corde raide. Tout y est une question de vie ou de mort. L’espace de la page et les archives prennent une part vivante et indispensable à son écriture.<br><br>
+								Roman chorégraphique, écriture iconographique, poésie accompagnée d’improvisations musicales, travaux d’écritures avec des photographes, des plasticiens, des psychiatres, les champs d’expérimentation de Perrine Le Querrec s’enrichissent de tous les vocabulaires de création.<br><br>
+								<span class="gras">Prix et résidences</span><br><br>
+								<span class="gras">2023</span><span class="blank"></span>Résidence à La Maison de poésie de Nantes<br>
+								<span class="gras">2022</span><span class="blank"></span>Résidence avec l’association la Missive - Centre Bretagne<br>
+								<span class="gras">2021</span><span class="blank"></span>Résidence à Laval, écriture d’un Dictionnaire avec les habitants d’un quartier prioritaire<br>
+								<span class="gras">2020</span><span class="blank"></span>Bourse Gina Chenouard, poésie<br>
+								<span class="gras">2019-2020</span><span class="blank"></span>Bourse de création du Centre National du Livre<br>
+								<span class="gras">2019</span><span class="blank"></span>Prix CoPo des lycéens pour <cite>Rouge pute</cite><br> 
+								<span class="gras">2019</span><span class="blank"></span>Résidence de création, septembre, Villa La Brugère, avec Ronan Courty<br>
+								<span class="gras">2018</span><span class="blank"></span>Lauréate de la commande nationale «&nbsp;Flux, une société en mouvement&nbsp;», co-création avec le photographe Mathieu Farcy<br>
+								<span class="gras">2017</span><span class="blank"></span>Résidente à la Fondation Jan Michalski pour l’écriture et la littérature (Suisse)<br>
+								<span class="gras">2016</span><span class="blank"></span>Prix du premier recueil de poésie Fondation Antoine et Marie-Hélène Labbé pour <cite>La Patagonie</cite><br>
+								<span class="gras">2014</span><span class="blank"></span>Résidente à la Maison Maria Casarès, maison du comédien, avec la photographe Isabelle Vaillant
+							  </div>
+							  <div class="col-1">
+								<span class="gras">Bibliographie</span><br><br>
+								<cite>Les mains d’Hannah</cite>, Éd. Tinbad, 2023<br>
+								<cite>La fille du chien</cite>, Éd. des Lisières, 2023<br>
+								<cite>Warglyphes</cite>, Éd. Bruno Doucey, 2023<br>
+								<cite>Les mains d’Hannah</cite>, Éd. Tinbad, 2023<br>
+								<cite>Le prénom a été modifié</cite>, Éd. La Contre Allée, 2022<br>
+								<cite>Les Alouettes</cite>, Éd. d’en bas, 2022<br>
+								<cite>Feux</cite>, Éd. Bruno Doucey, 2021<br>
+								<cite>Les trois maisons</cite>, Éd. d'en bas, 2021<br>
+								<cite>Bacon / D’agata</cite>, Éd. The eyes, texte critique, 2020<br>
+								<cite>La Bête, son corps de forêt</cite>, Éd. Les Inaperçus, 2020<br>
+								<cite>Rouge pute</cite>, Éd. La Contre Allée, 2020<br>
+								<cite>Vers Valparaiso</cite> (poésie et collages), Éd. Les Carnets du dessert de lune, 2020<br>
+								<cite>Bacon le cannibale</cite> (poésie et archives), Éd. Hippocampe, 2018<br>
+								<cite>La Construction</cite> (roman chorégraphique), Éd. Art & Fiction, 2018<br>
+								<cite>Le Plancher</cite>, Éd. L’Eveilleur, 2018<br>
+								<cite>Ruines</cite>, Éd. Tinbad, 2017<br>
+								<cite>Les tondues</cite>, Éd. Z4, 2017<br>
+								<cite>La Ritournelle</cite>, Éd. Lunatique, 2017<br>
+								<cite>L’Apparition</cite>, Éd. Lunatique, 2016<br>
+								<cite>La Patagonie</cite>, Éd. Les Carnets du dessert de lune, 2015 – Prix 2016 du Premier Recueil de poésie de la Fondation Antoine et Marie-Hélène Labbé<br>
+								<cite>Têtes blondes</cite> (nouvelles), Éd. Lunatique, 2015<br>
+								<cite>Bec & Ongles</cite>, Éd. Les Carnets du dessert de lune, 2011<br>
+								<cite>Coups de ciseaux</cite>, Éd. Les Carnets du dessert de lune, 2007
+							  </div>
+						</div>
+						
+					  </div>
+					
+					
+					  <div class="cv">
+						<div class="col-0">
+						  <div class="nom">
+							Mathieu Farcy<br>
+							<a href="https://mathieufarcy.com/" target="_blank">www.mathieufarcy.com</a><br><br>
+						  </div>
+						</div>
+						<div class="col-1-container">
+							<div class="col-1">
+								<span class="gras">Expositions - publications</span><br><br>
+								<span class="gras">2023</span><span class="blank"></span>Exposition <cite>Les Amazones n’existent pas</cite> - Fondation Jan Michalski - PLY<br>
+								<span class="gras">2022</span><span class="blank"></span>Parution du livre <cite>Je n’habitais pas mon visage</cite> aux éditions Loco<br>
+								<span class="gras">2022</span><span class="blank"></span>Exposition monographique à l’Abbaye de Saint Riquier<br>
+								<span class="gras">2022</span><span class="blank"></span>Résident du centre d’art Léo Lagrange à Amiens<br>
+								<span class="gras">2021</span><span class="blank"></span>Atelier artistique au lycée du Cateau Cambrésis avec le CRP/ - féminités<br>
+								<span class="gras">2021</span><span class="blank"></span>Saints Loups - Résidence - Amiens<br>
+								<span class="gras">2020</span><span class="blank"></span>Exposition <cite>L’Augure</cite> - Les Photaumnales, Beauvais<br>
+								<span class="gras">2020</span><span class="blank"></span>Exposition <cite>L’Augure</cite> - Centre Régional de la Photographie, Douchy les mines<br>
+								<span class="gras">2020</span><span class="blank"></span>Exposition d’un projet d’art en commun sur la disqualification sociale à l’Abbaye de St Riquier<br>
+								<span class="gras">2019</span><span class="blank"></span>Exposition au centre culturel Français de Bucarest - <cite>Je n’habitais pas mon visage</cite><br>
+								<span class="gras">2019</span><span class="blank"></span>Exposition au festival Circulation(s), au 104 à Paris - <cite>Je n’habitais pas mon visage</cite><br>
+								<span class="gras">2018</span><span class="blank"></span>Exposition personnelle - Maison du Département de la Somme - <cite>Je n’habitais pas mon visage</cite><br>
+								<span class="gras">2017</span><span class="blank"></span>Exposition collective à la BNF, site François Mitterrand - Un Paysage Français<br>
+								<span class="gras">2017</span><span class="blank"></span>Exposition collective à la Villa Tamaris, La Seyne sur Mer - Paysages orientés<br>
+								<span class="gras">2017</span><span class="blank"></span>Exposition personnelle aux Promenades photographiques de Vendôme - Paysages orientés<br>
+								<span class="gras">2017</span><span class="blank"></span>Exposition collective à la SCAM - Mois de la Photo - Paysages orientés<br>
+								<span class="gras">2017</span><span class="blank"></span>Exposition personnelle à Images Singulières, Sète - Paysages orientés<br>
+								<span class="gras">2016</span><span class="blank"></span>Exposition personnelle - Paysages orientés - Festival Shoot ! Chamonix<br>
+								<span class="gras">2016</span><span class="blank"></span>Exposition personnelle - Paysages orientés - Invitations d’Artistes, Amiens<br>
+								<span class="gras">2016</span><span class="blank"></span>Résidence au Festival Photo Mont Blanc<br>
+								<span class="gras">2016</span><span class="blank"></span>Exposition personnelle - Paysages orientés - Diaphane, Clermont de l’Oise
+							  </div>
+							  <div class="col-1">
+								<span class="gras">Bourses, prix</span><br><br>
+								<span class="gras">2023</span><span class="blank"></span>Résidence 5* - Stimultania - Givors<br>
+								<span class="gras">2022</span><span class="blank"></span>Lauréats de la grande commande de la BNF - duo PLY<br>
+								<span class="gras">2019 - 2020</span><span class="blank"></span>Résident du Centre culturel de St Riquier - Projet <cite>La part du feu</cite><br>
+								<span class="gras">2019</span><span class="blank"></span>Présélection au prix Images Vevey Book Award<br>
+								<span class="gras">2018</span><span class="blank"></span>Lauréat, avec Perrine Le Querrec, de l’appel à projet Flux, initié par le Centre National des Arts Plastiques<br>
+								<span class="gras">2018</span><span class="blank"></span>Bourse Culture à l’hôpital - DRAC - ARS - Projet Méduse<br>
+								<span class="gras">2018</span><span class="blank"></span>Bourse d’aide à la création - Région Hauts-de-France - Projet Méduse<br>
+								<span class="gras">2016</span><span class="blank"></span>Lauréat du projet La France vue d’ici<br>
+								<span class="gras">2015</span><span class="blank"></span>Aide à la création de la DRAC Picardie - Projet Paysages Orientés<br>
+								<span class="gras">2015</span><span class="blank"></span>Coup de coeur du Prix Mentor - Freelens<br>
+								<span class="gras">2014</span><span class="blank"></span>Bourse régionale pour le montage du film 4x8 = 7 ans, sur les ouvriers Goodyear à Amiens.<br>
+								<span class="gras">2013</span><span class="blank"></span>Soutien de la Mission du Centenaire<br><br>
+								<span class="gras">Formation</span><br><br>
+								<span class="gras">2012-2013</span><span class="blank"></span>EMI-CFD, École de photojournalisme<br>
+								<span class="gras">2006-2009</span><span class="blank"></span>IRFFE, École d’éducateur spécialisé
+							  </div>
 						</div>
 					  </div>
 
