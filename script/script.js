@@ -370,6 +370,9 @@ window.onload = () => {
         if(content.dataset.type == "carole"){
             animationTitre();
         }
+        if(content.dataset.type == "rugissantes"){
+            animationTitre();
+        }
         if(content.dataset.type == "365"){
             animationTitre();
             animationVerbes();

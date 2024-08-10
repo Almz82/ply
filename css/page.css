@@ -79,6 +79,14 @@ section{
 .image-tete .legende{
     font-size: .7em;
 }
+.image-corps{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.image-corps > img{
+	width: 100%;
+	height: auto;  
+}
 
 /* MENU */
 nav{
