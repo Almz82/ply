@@ -294,14 +294,14 @@ const animationCitations = () => {
     });
 
     tl
-		.to(conti, { autoAlpha: 1, yPercent: -80}, 0)
-		.to(conti, { autoAlpha: 0, yPercent: -60}, 6)
+		.to(conti, { autoAlpha: 1, yPercent: -80}, 2)
+		.to(conti, { autoAlpha: 0, yPercent: -60}, 8)
         .to(penitot, { autoAlpha: 1, yPercent: -100}, 16)
-		.to(penitot, { autoAlpha: 0, yPercent: -40}, 22)
-        .to(arthaud, { autoAlpha: 1, yPercent: -80}, 30)
-		.to(arthaud, { autoAlpha: 0, yPercent: -30}, 36)
-        .to(woolf, { autoAlpha: 1, yPercent: -90}, 40)
-		.to(woolf, { autoAlpha: 0, yPercent: -30}, 46)
+		.to(penitot, { autoAlpha: 0, yPercent: -40}, 21)
+        .to(arthaud, { autoAlpha: 1, yPercent: -80}, 26)
+		.to(arthaud, { autoAlpha: 0, yPercent: -30}, 34)
+        .to(woolf, { autoAlpha: 1, yPercent: -90}, 39)
+		.to(woolf, { autoAlpha: 0, yPercent: -30}, 45)
     return tl;
 
 }

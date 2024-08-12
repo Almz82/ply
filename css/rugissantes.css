@@ -6,7 +6,6 @@
 
 .container-image-texte{
 	position: relative;
-    margin-top: 3em;
     margin-bottom: 3em;
 }
 .container-image-texte > img{
@@ -16,7 +15,7 @@
 
 .citation{
 	position: absolute;
-	top: 45%;
+	top: 48%;
 	left: 48%;
 	transform: translate(-50%, -50%);
 	color: white;
@@ -34,13 +33,13 @@
     font-style: normal;
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1060px) {
 	.citation{
-		top: 45%;
+		top: 49%;
 		left: 48%;
 		transform: translate(-50%, -50%);
 		max-width: 40%;
-		font-size: 0.9em;
+		font-size: 0.85em;
 	}
 }
 
@@ -70,7 +69,7 @@
 
 @media screen and (max-width: 660px) {
 	.citation{
-		top: 45%;
+		top: 50%;
 		left: 48%;
 		transform: translate(-50%, -50%);
 		max-width: 35%;
@@ -79,10 +78,10 @@
 }
 @media screen and (max-width: 460px) {
 	.citation{
-		top: 50%;
+		top: 52%;
 		left: 48%;
 		transform: translate(-50%, -50%);
 		max-width: 35%;
-		font-size: 0.8em;
+		font-size: 0.7em;
 	}
 }
