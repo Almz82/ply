@@ -282,10 +282,6 @@ nav a.logo-nav:hover img.logo-nav-hover{
     h2{
         max-width: fit-content;
     }
-    .hamburger { 
-        top: 8vh;
-        right: 3vh;
-    }
 }
 @media screen and (max-width: 560px) {
     #titre{
@@ -392,6 +388,10 @@ nav a.logo-nav:hover img.logo-nav-hover{
     }
 }
 @media screen and (max-height: 560px) {
+    .hamburger { 
+        top: 6vh;
+        right: 5vh;
+    }
     nav > ul > li{
         margin: 4.5vh;
     }

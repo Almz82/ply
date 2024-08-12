@@ -279,6 +279,33 @@ const animationVerbes = () => {
 
 }
 
+/* animation RUGISSANTES */
+const animationCitations = () => {
+	
+	const conti = document.querySelector('[data-citation="conti"]');
+	const penitot = document.querySelector('[data-citation="penitot"]');
+	const arthaud = document.querySelector('[data-citation="arthaud"]');
+	const woolf = document.querySelector('[data-citation="woolf"]');
+
+	const tl = gsap.timeline({
+        defaults: {
+            duration: 7, ease: 'power1'
+        }
+    });
+
+    tl
+		.to(conti, { autoAlpha: 1, yPercent: -80}, 14)
+		.to(conti, { autoAlpha: 0, yPercent: -60}, 20)
+        .to(penitot, { autoAlpha: 1, yPercent: -100}, 30)
+		.to(penitot, { autoAlpha: 0, yPercent: -40}, 36)
+        .to(arthaud, { autoAlpha: 1, yPercent: -80}, 44)
+		.to(arthaud, { autoAlpha: 0, yPercent: -30}, 50)
+        .to(woolf, { autoAlpha: 1, yPercent: -90}, 58)
+		.to(woolf, { autoAlpha: 0, yPercent: -30}, 64)
+    return tl;
+
+}
+
 /* animation PLY-CV */
 const animationPly = () => {
     const logoUn = document.querySelector('.logo.un');
@@ -372,6 +399,7 @@ window.onload = () => {
         }
         if(content.dataset.type == "rugissantes"){
             animationTitre();
+            animationCitations();
         }
         if(content.dataset.type == "365"){
             animationTitre();
