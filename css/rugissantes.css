@@ -19,7 +19,7 @@
 	top: 45%;
 	left: 48%;
 	transform: translate(-50%, -50%);
-	color: var(--background-color);
+	color: white;
 	max-width: 40%;
 	font-family: 'Barlow Condensed', sans-serif;
 	font-size: 0.9em;

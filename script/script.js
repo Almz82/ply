@@ -294,14 +294,14 @@ const animationCitations = () => {
     });
 
     tl
-		.to(conti, { autoAlpha: 1, yPercent: -80}, 14)
-		.to(conti, { autoAlpha: 0, yPercent: -60}, 20)
-        .to(penitot, { autoAlpha: 1, yPercent: -100}, 30)
-		.to(penitot, { autoAlpha: 0, yPercent: -40}, 36)
-        .to(arthaud, { autoAlpha: 1, yPercent: -80}, 44)
-		.to(arthaud, { autoAlpha: 0, yPercent: -30}, 50)
-        .to(woolf, { autoAlpha: 1, yPercent: -90}, 58)
-		.to(woolf, { autoAlpha: 0, yPercent: -30}, 64)
+		.to(conti, { autoAlpha: 1, yPercent: -80}, 0)
+		.to(conti, { autoAlpha: 0, yPercent: -60}, 6)
+        .to(penitot, { autoAlpha: 1, yPercent: -100}, 16)
+		.to(penitot, { autoAlpha: 0, yPercent: -40}, 22)
+        .to(arthaud, { autoAlpha: 1, yPercent: -80}, 30)
+		.to(arthaud, { autoAlpha: 0, yPercent: -30}, 36)
+        .to(woolf, { autoAlpha: 1, yPercent: -90}, 40)
+		.to(woolf, { autoAlpha: 0, yPercent: -30}, 46)
     return tl;
 
 }
@@ -399,7 +399,20 @@ window.onload = () => {
         }
         if(content.dataset.type == "rugissantes"){
             animationTitre();
-            animationCitations();
+
+            const watch = document.querySelector(".watch");
+
+            function obCallback(payload) {
+
+                if(payload[0].isIntersecting == true){
+                    animationCitations();
+                };
+              }
+              
+              const ob = new IntersectionObserver(obCallback);
+              ob.observe(watch);
+              
+            
         }
         if(content.dataset.type == "365"){
             animationTitre();
