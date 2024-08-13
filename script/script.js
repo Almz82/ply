@@ -289,19 +289,19 @@ const animationCitations = () => {
 
 	const tl = gsap.timeline({
         defaults: {
-            duration: 7, ease: 'power1'
+            duration: 7, ease: 'power1', repeat: -1, repeatDelay: 40
         }
     });
 
     tl
-		.to(conti, { autoAlpha: 1, yPercent: -80}, 2)
-		.to(conti, { autoAlpha: 0, yPercent: -60}, 8)
-        .to(penitot, { autoAlpha: 1, yPercent: -100}, 16)
-		.to(penitot, { autoAlpha: 0, yPercent: -40}, 21)
-        .to(arthaud, { autoAlpha: 1, yPercent: -80}, 26)
-		.to(arthaud, { autoAlpha: 0, yPercent: -30}, 34)
-        .to(woolf, { autoAlpha: 1, yPercent: -90}, 39)
-		.to(woolf, { autoAlpha: 0, yPercent: -30}, 45)
+		.to(conti, { autoAlpha: 1, yPercent: -70}, 2)
+		.to(conti, { autoAlpha: 0, yPercent: -10}, 8)
+        .to(penitot, { autoAlpha: 1, yPercent: -100}, 13)
+		.to(penitot, { autoAlpha: 0, yPercent: -30}, 18)
+        .to(arthaud, { autoAlpha: 1, yPercent: -80}, 22)
+		.to(arthaud, { autoAlpha: 0, yPercent: -20}, 28)
+        .to(woolf, { autoAlpha: 1, yPercent: -100}, 32)
+		.to(woolf, { autoAlpha: 0, yPercent: -10}, 39)
     return tl;
 
 }
@@ -399,20 +399,7 @@ window.onload = () => {
         }
         if(content.dataset.type == "rugissantes"){
             animationTitre();
-
-            const watch = document.querySelector(".watch");
-
-            function obCallback(payload) {
-
-                if(payload[0].isIntersecting == true){
-                    animationCitations();
-                };
-              }
-              
-              const ob = new IntersectionObserver(obCallback);
-              ob.observe(watch);
-              
-            
+            animationCitations();    
         }
         if(content.dataset.type == "365"){
             animationTitre();
