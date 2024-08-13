@@ -194,7 +194,7 @@ svg{
 }
 @media screen and (max-width: 660px) {
 	body{
-		min-height: 95vh;
+		max-height: 95vh;
 		overflow-x: hidden;
 	}
 	#main{

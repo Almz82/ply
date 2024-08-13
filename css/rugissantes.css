@@ -60,7 +60,7 @@
         padding-left: 0px;
         padding-top: 8vh;
         padding-right: 0vw;
-        max-width: 86%;
+        /* max-width: 86%; */
     }
     h2{
         max-width: fit-content;
