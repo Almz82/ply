@@ -9,6 +9,9 @@
     --theme-color:#ff7d18;
     /* --theme-color-transparent: rgba(36, 149, 149, 0.1); */
     --theme-color-transparent: rgba(255, 125, 24, 0.1);
+    --theme-color-lighter: rgba(255, 125, 24, 0.6);
+    --theme-color-light: rgba(255, 125, 24, 0.4);
+    --theme-color-x-light: rgba(255, 125, 24, 0.2);
     --text-color: #141616;
     --background-color: #e6e9ea;
     --background-color-transparent: rgba(230, 233, 234, 0.9);

@@ -80,6 +80,7 @@
 @media screen and (max-width: 560px) {
     .ply{
         font-size: 1.1em;
+        width: 85%;
     }
 }
 @media screen and (max-width: 460px) {
@@ -90,3 +91,18 @@
         width: 75%;
     }
 }
+@media screen and (max-width: 410px) {
+    .ply{
+        font-size: 1em;
+    }
+    #intro{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 410px) {
+    .ply{
+        text-align: left;
+    }
+}
+
+

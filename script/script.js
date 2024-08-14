@@ -401,6 +401,71 @@ window.onload = () => {
             animationTitre();
             animationCitations();    
         }
+        if(content.dataset.type == "amazones"){
+            animationTitre();
+            /* diaporama */
+            const next_btn = document.querySelector('#next');
+            const prev_btn = document.querySelector('#prev');
+            const slider = document.querySelector('.slider');
+            let first_slide;
+            let last_slide;
+            let images = [
+                "images/amazones/diaporama/amazones(1).jpg",
+                "images/amazones/diaporama/amazones(1).png",
+                "images/amazones/diaporama/amazones(2).jpg",
+                "images/amazones/diaporama/amazones(2).png",
+                "images/amazones/diaporama/amazones(3).jpg",
+                "images/amazones/diaporama/amazones(3).png",
+                "images/amazones/diaporama/amazones(4).jpg",
+                "images/amazones/diaporama/amazones(5).jpg",
+                "images/amazones/diaporama/amazones(6).png",
+                "images/amazones/diaporama/amazones(7).jpg",
+                "images/amazones/diaporama/amazones(8).jpg",
+                "images/amazones/diaporama/amazones(9).jpg",
+                "images/amazones/diaporama/amazones(10).jpg",
+                "images/amazones/diaporama/amazones(11).jpg",
+                "images/amazones/diaporama/amazones(12).png",
+                "images/amazones/diaporama/amazones(13).jpg",
+                "images/amazones/diaporama/amazones(14).jpg",
+                "images/amazones/diaporama/amazones(15).jpg"
+            ];
+            images.forEach((image, i) => {
+                const slide = document.createElement('div');
+                slide.classList.add('slider_slide');
+                slide.style.backgroundImage = "url('" + image + "')";
+                if (i == 0){
+                    first_slide = slide;
+                    slide.classList.add('active');
+                } else if (i + 1 == images.length) {
+                    last_slide = slide;
+                }
+                slider.appendChild(slide);
+            });
+            next.addEventListener('click', () => {
+                const active_slide = slider.querySelector('.slider_slide.active');
+                let nextSibling = active_slide.nextElementSibling;
+            
+                if(nextSibling == null) {
+                    nextSibling = first_slide;
+                }
+                if(nextSibling.classList.contains('slider_slide')) {
+                    active_slide.classList.remove('active');
+                    nextSibling.classList.add('active');
+                }
+            })
+            prev.addEventListener('click', () => {
+                const active_slide = slider.querySelector('.slider_slide.active');
+                let nextSibling = active_slide.previousElementSibling;
+            
+                if(nextSibling == null || !nextSibling.classList.contains('slider_slide')) {
+                    nextSibling = last_slide;
+                }
+                if(nextSibling.classList.contains('slider_slide')) {
+                    active_slide.classList.remove('active');
+                    nextSibling.classList.add('active');
+                }
+            })
+        }
         if(content.dataset.type == "365"){
             animationTitre();
             animationVerbes();

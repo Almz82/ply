@@ -10,6 +10,7 @@
     /* --theme-color:#ff8200; */
     /* --theme-color-transparent: rgba(36, 149, 149, 0.1); */
     --theme-color-transparent: rgba(255, 125, 24, 0.1);
+    --theme-color-light: rgba(255, 125, 24, 0.4);
     --text-color: #141616;
     --background-color: #e6e9ea;
 }
