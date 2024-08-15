@@ -397,6 +397,9 @@ window.onload = () => {
         if(content.dataset.type == "carole"){
             animationTitre();
         }
+        if(content.dataset.type == "feux"){
+            animationTitre();
+        }
         if(content.dataset.type == "rugissantes"){
             animationTitre();
             animationCitations();    
