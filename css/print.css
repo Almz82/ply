@@ -1,0 +1,136 @@
+.print{
+    margin-bottom: 5vh;
+	padding-top: 8vh;
+	width: 85%;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.5em;
+	text-align: justify;
+    margin: auto;
+}
+
+.intro{
+    text-align: center;
+}
+.paragraphe1,
+.paragraphe2,
+.paragraphe3,
+.paragraphe4{
+    padding: 1em;
+    transform-origin: top;
+    letter-spacing: .2em;
+}
+
+.paragraphe4{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0em;
+    color: var(--theme-color);
+}
+.fleche{
+    width: 2em;
+    margin: auto;
+    margin-top: 2em;
+}
+
+article{
+    margin-top: 3em;
+}
+.title{
+    text-align: center;
+    color: var(--theme-color);
+    visibility: visible;
+    opacity: 1;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    margin-top: 3em;
+}
+.text{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.flex-container{
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2em;
+}
+.flex-item{
+    width: 36%;
+    max-height: 60vh;
+}
+.flex-item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.affiche{
+    width: 100%;
+}
+
+#voeux_2024{
+	position: relative;
+	overflow: hidden;
+	max-width: 95vh;
+	height: 95vh;
+	margin: auto;
+    margin-bottom: 5em;
+}
+#voeux_2024 img{
+	max-width: 100%;
+    max-height: 100%;
+	border-right: solid black 1px;
+	border-left: solid black 1px;
+}
+#voeux_2024 .inside,
+#voeux_2024 .outside{
+	height: 100%;
+	cursor: pointer;
+}
+#voeux_2024 .outside{
+	display: flex;
+}
+#voeux_2024 .left{
+	height: 100%;
+	width: 50%;
+	text-align:right;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	transition: all .6s ease-out;
+}
+#voeux_2024 .left.moved{
+	left: -50%;
+}
+#voeux_2024 .right{
+	height: 100%;
+	width: 50%;
+	text-align:left;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transition: all .6s ease-out;
+}
+#voeux_2024 .right.moved{
+	left: 101%;
+}
+
+#voeux_2022{
+    max-width: 95vh;
+	height: 95vh;
+    margin: auto;
+    margin-bottom: 5em;
+}
+#voeux_2022 img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: .5s;
+}
+#voeux_2022 img:hover{
+    cursor:pointer;
+}
+.rotated_image {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+            transition: .5s;
+  }
+  

@@ -43,7 +43,7 @@
 #portrait>img{
     max-height: 90vh;
 	width: auto;
-    max-width: 80%;
+    width: 100%;
 }
 
 /*responsive*/
@@ -84,24 +84,28 @@
     }
 }
 @media screen and (max-width: 460px) {
+    .logo{
+        height: 14vh;
+    }
     .ply{
         font-size: 1em;
+        padding-top: 4vh;
     }
     #intro{
         width: 75%;
     }
 }
 @media screen and (max-width: 410px) {
+    .logo{
+        height: 14vh;
+    }
     .ply{
         font-size: 1em;
-    }
-    #intro{
-        width: 75%;
-    }
-}
-@media screen and (max-width: 410px) {
-    .ply{
+        padding-top: 3vh;
         text-align: left;
+    }
+    #intro{
+        width: 75%;
     }
 }
 

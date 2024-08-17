@@ -306,6 +306,33 @@ const animationCitations = () => {
 
 }
 
+/* animation PRINT */
+const animationPrint = () => {
+	
+	const lettres1 = document.querySelectorAll('.lettre1');
+	const lettres2 = document.querySelectorAll('.lettre2');
+	const lettres3 = document.querySelectorAll('.lettre3');
+	const lettres4 = document.querySelectorAll('.lettre4');
+	const lettres5 = document.querySelectorAll('.lettre5');
+	
+
+	const tl = gsap.timeline({
+        defaults: {
+            duration: .1, ease: 'power1'
+        }
+    });
+
+    tl
+		.fromTo(lettres1, { autoAlpha: 0}, { autoAlpha: 1, stagger: 0.06}, 1.5)
+		.fromTo(lettres2, { autoAlpha: 0}, { autoAlpha: 1, stagger: 0.06}, 2.2)
+		.fromTo(lettres3, { autoAlpha: 0}, { autoAlpha: 1, stagger: 0.06}, 2.5)
+		.fromTo(lettres4, { autoAlpha: 0}, { autoAlpha: 1, stagger: 0.06}, 3.5)
+		.fromTo(lettres5, { autoAlpha: 0}, { autoAlpha: 1, stagger: 0.06}, 3.8)
+
+    return tl;
+
+}
+
 /* animation PLY-CV */
 const animationPly = () => {
     const logoUn = document.querySelector('.logo.un');
@@ -472,6 +499,29 @@ window.onload = () => {
         if(content.dataset.type == "365"){
             animationTitre();
             animationVerbes();
+        }
+        if(content.dataset.type == "print"){
+            animationPrint();
+
+            /* voeux 2024 */
+            const zoneElts = document.querySelectorAll('.zone');
+            const leftElt = document.querySelector('.left');
+            const rightElt = document.querySelector('.right');
+
+            zoneElts.forEach((zone) => zone.addEventListener('click', () => {
+                leftElt.classList.toggle('moved');
+                rightElt.classList.toggle('moved');
+            }));
+
+            /* voeux 2022 */
+            function rotateImage() {
+                var img = document.querySelector('#voeux_2022 img');
+                img.classList.toggle("rotated_image");
+              }
+
+            document.querySelector('#voeux_2022 img').addEventListener('click', () => {
+                rotateImage();
+            })
         }
         if(content.dataset.type == "ply"){
             animationPly();
