@@ -87,6 +87,11 @@
 .photos img{
     width: 100%;
 }
+.copyright{
+    width: 100%;
+    text-align:right;
+    font-size:.6em;
+}
 
 
 /* RESPONSIVE */
