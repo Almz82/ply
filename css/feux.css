@@ -62,6 +62,18 @@ section{
 	cursor: pointer;
 }
 
+.mention .color{
+    color: var(--theme-color);
+}
+.mention a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.mention a:hover{
+    text-decoration: none;
+    color: var(--theme-color);
+}
+
 @media screen and (max-width: 1060px) {
     section{
         margin-left: 20vw;
