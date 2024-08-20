@@ -503,6 +503,13 @@ window.onload = () => {
         if(content.dataset.type == "print"){
             animationPrint();
 
+            if (window.matchMedia("(max-width: 510px)").matches){
+                const breakElt = document.querySelector(".break");
+
+                breakElt.innerHTML = "<br>";
+
+            }
+
             /* voeux 2024 */
             const zoneElts = document.querySelectorAll('.zone');
             const leftElt = document.querySelector('.left');
